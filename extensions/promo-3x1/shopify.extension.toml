@@ -2,7 +2,7 @@ api_version = "2026-04"
 
 [[extensions]]
 name = "t:name"
-handle = "promo-2x1"
+handle = "promo-3x1"
 type = "function"
 uid = "22d67ace-b0ab-85bd-6582-87e46638cccf7204f73b"
 description = "t:description"
@@ -15,7 +15,3 @@ description = "t:description"
   [extensions.build]
   command = ""
   path = "dist/function.wasm"
-
-  [extensions.ui.paths]
-  create = "/"
-  details = "/"

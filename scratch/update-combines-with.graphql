@@ -1,0 +1,26 @@
+mutation {
+  discountAutomaticAppUpdate(
+    id: "gid://shopify/DiscountAutomaticNode/1386404544625"
+    automaticAppDiscount: {
+      combinesWith: {
+        orderDiscounts: true
+        productDiscounts: true
+        shippingDiscounts: true
+      }
+    }
+  ) {
+    automaticAppDiscount {
+      discountId
+      title
+      combinesWith {
+        orderDiscounts
+        productDiscounts
+        shippingDiscounts
+      }
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}

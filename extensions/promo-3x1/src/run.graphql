@@ -8,6 +8,11 @@ query RunInput {
           amount
         }
       }
+      discountAllocations {
+        discountedAmount {
+          amount
+        }
+      }
       merchandise {
         __typename
         ... on ProductVariant {
@@ -15,7 +20,6 @@ query RunInput {
           product {
             id
             productType
-            hasAnyTag(tags: ["curso", "especializacion", "Curso", "Especializacion", "Especialización"])
           }
         }
       }
